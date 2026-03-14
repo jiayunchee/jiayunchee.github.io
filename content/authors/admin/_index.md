@@ -5,7 +5,7 @@ title: Chee Jia Yun
 # Full name (for SEO)
 first_name: Jia Yun
 last_name: Chee
-avatar_filename: pp.jpg
+avatar_filename: avatar.jpg
 
 # Status emoji
 status:
