@@ -41,13 +41,13 @@ education:
       Eusoff Hall (AY23/24)
     
       Certifications include:
-      - AI Singapore Python
-      - Introduction to SQL (Davidson College)
-      - Analyzing Data with Excel (IBM)
-      - Foundational C# with Microsoft
-      - Data Analysis with Python (FreeCodeCamp)
-      - Introduction to Tableau (DataCamp)
-      - UAiTED x NCU Human-Centered AI Lecture Series
+      - [AI Singapore Python](https://learn.aisingapore.org/certificate-verification/838A08996C-7F0B8AFE59-14B233198/)
+      - [Introduction to SQL – Davidson College](https://courses.edx.org/certificates/1d23645421c84995bc634d9114216b53)
+      - [Analyzing Data with Excel – IBM](https://courses.edx.org/certificates/c9ca1452cf03401caf880887c1214308)
+      - [Foundational C# – Microsoft](https://freecodecamp.org/certification/JiaYun/foundational-c-sharp-with-microsoft)
+      - [Data Analysis with Python – FreeCodeCamp](https://freecodecamp.org/certification/JiaYun/data-analysis-with-python-v7)
+      - [Introduction to Tableau – DataCamp](https://www.datacamp.com/completed/statement-of-accomplishment/course/e59bffb7ed6c7cdc930fa84500528a284f444b54)
+      - [UAiTED x NCU Human-Centered AI Lecture Series]([https://certificate-link.com](https://www.linkedin.com/in/jia-yun-chee/details/certifications/1751961606703/single-media-viewer/?profileId=ACoAADiI_yQBa0N-NHFtV9RHYTNrC1hmYWtjPig))
 
 work:
   - position: Digital Business Analyst Intern
