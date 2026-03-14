@@ -36,8 +36,8 @@ education:
     summary: |
       Specialisation in Operations Research.
 
-      Exchange Programme at University of California, San Diego (AY25/26 Sem 1).
-      NUS Winter Programme – Startup Ecosystem Exposure, Jakarta (AY24/25).
+      Exchange Programme at University of California, San Diego (AY25/26 Sem 1)|
+      NUS Winter Programme – Startup Ecosystem Exposure, Jakarta (AY24/25)|
       Eusoff Hall (AY23/24)
     
       Certifications include:
