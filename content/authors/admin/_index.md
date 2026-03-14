@@ -3,170 +3,175 @@
 title: Chee Jia Yun
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Chee Jia Yun
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Jia Yun
+last_name: Chee
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 📊
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: Data Science & Analytics Undergraduate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: National University of Singapore
+    url: https://www.nus.edu.sg/
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:cheejiayun2405@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/github
-    url: https://github.com/gcushen
   - icon: brands/linkedin
     url: https://www.linkedin.com/
-  - icon: brands/instagram
-    url: https://www.instagram.com/
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: BSc Data Science & Analytics
+    institution: National University of Singapore
+    date_start: 2023-08-01
+    date_end: ''
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+      Specialisation in Operations Research.
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Exchange Programme at University of California, San Diego (AY25/26 Sem 1).
+      NUS Winter Programme – Startup Ecosystem Exposure, Jakarta (AY24/25).
+
+      Certifications include:
+      - AI Singapore Python
+      - Introduction to SQL (Davidson College)
+      - Analyzing Data with Excel (IBM)
+      - Foundational C# with Microsoft
+      - Data Analysis with Python (FreeCodeCamp)
+      - Introduction to Tableau (DataCamp)
+      - UAiTED x NCU Human-Centered AI Lecture Series
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
+  - position: Digital Business Analyst Intern
+    company_name: GovTech
+    company_url: 'https://www.tech.gov.sg/'
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2026-01-01
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Managing NEXT network and automating large-scale user onboarding for an internal SharePoint-based employee knowledge database; analysing participant feedback to identify trends for improvement.
+      - Developing internal material for storytelling and campaign planning around key digital products from strategic product engagements.
+      - Bridging business needs and AI capabilities, translating operational challenges into functional AI workflows and qualitative responses into structured insights for improving information retrieval and decision support.
+  - position: Business Insights & Activation Intern
+    company_name: MSD (Merck & Co.)
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2025-07-01
+    date_end: 2025-09-30
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Supported the Asia-Pacific Business Insights & Activation (BIA) team in executing data-driven strategies across regional markets, maintaining Monthly Business Reviews and Dashboards.
+      - Assisted in interpreting and activating insights from multiple dashboards (AP Sales, Infrared, IPMG) to support business decisions and enhance internal visibility of analytic tools.
+      - Communicated cross-functionally with market teams and stakeholders to ensure alignment of analytics initiatives.
+  - position: Business Analyst Intern
+    company_name: SlurpBros
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-05-01
+    date_end: 2025-05-31
+    summary: |
+      Responsibilities include:
+      - Built interactive dashboards using Tableau and conducted statistical analysis to support data-driven insights.
+      - Automated reporting workflows with Python scripts, improving efficiency in data processing.
+      - Used Excel and PowerPoint to extract and analyse data, assist in external project management, tracked deliverables, and coordinated with clients to align analytics solutions with business goals.
+  - position: Financial Intern
+    company_name: Advisor Alliance Group
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-06-01
+    date_end: 2023-08-31
+    summary: |
+      Responsibilities include:
+      - Studied Risk and Wealth Management, Financial Portfolio Design, and Business Management.
+  - position: Assurance Intern
+    company_name: Foo Kon Tan
+    company_url: ''
+    company_logo: ''
+    date_start: 2021-01-01
+    date_end: 2021-04-30
+    summary: |
+      Responsibilities include:
+      - Prepared working papers, reports, and supporting documentation for audit findings using Excel for data analysis.
 
 # Skills
-# Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
       - name: Python
         description: ''
-        percent: 80
+        percent: 90
         icon: devicon/python
-      - name: RStudio
+      - name: SQL
         description: ''
-        percent: 100
+        percent: 85
+        icon: devicon/mysql
+      - name: R
+        description: ''
+        percent: 75
         icon: devicon/rstudio
-      - name: PyTorch
+      - name: Tableau
         description: ''
-        percent: 40
-        icon: devicon/pytorch
+        percent: 80
+        icon: chart-bar
+      - name: Excel & Power BI
+        description: ''
+        percent: 85
+        icon: table-cells
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Data Storytelling
         description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
+        percent: 90
+        icon: presentation-chart-line
+      - name: Entrepreneurship
         description: ''
         percent: 80
-        icon: camera
+        icon: light-bulb
+      - name: Volunteering
+        description: ''
+        percent: 85
+        icon: heart
 
 languages:
   - name: English
     percent: 100
   - name: Chinese
     percent: 75
-  - name: Portuguese
-    percent: 25
 
 # Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
+  - title: National Award – Covid-19 Resilience Certificate and Medal
+    date: '2022-01-01'
+    awarder: Singapore Government
+    icon: ''
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
+      Awarded the Covid-19 Resilience Certificate and Medal in recognition of contributions during the pandemic.
+  - title: Best in Theory – Emergency Medical Technician Course
+    date: '2021-01-01'
+    awarder: EMT Course Organisers
+    icon: ''
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
+      Awarded "Best in Theory" for outstanding performance in the Emergency Medical Technician course.
+  - title: Distinction – UNSW International Competitions and Assessments for Mathematics
+    date: '2017-01-01'
+    awarder: UNSW Global
+    icon: ''
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Achieved Distinction in the UNSW International Competitions and Assessments for Mathematics.
 ---
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+I am a Data Science & Analytics undergraduate at the National University of Singapore, specialising in Operations Research. I am passionate about turning data into actionable insights and have hands-on experience across government tech, pharma, and startup environments. Currently interning at GovTech as a Digital Business Analyst, I bridge business needs and AI capabilities to drive smarter decision-making.
