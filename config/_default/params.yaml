@@ -30,9 +30,9 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: floating-theme-toggler
-    logo:
-      text: "JY"
+      blox: floating-theme-toggler
+        logo:
+          text: "JY"
 
 # Site footer
 footer:
