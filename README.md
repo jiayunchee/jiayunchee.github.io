@@ -2,9 +2,6 @@
 # Display name
 title: Chee Jia Yun
 
-# Name pronunciation (optional)
-name_pronunciation: Chee Jia Yun
-
 # Full name (for SEO)
 first_name: Jia Yun
 last_name: Chee
