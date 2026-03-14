@@ -47,7 +47,22 @@ education:
       - [Foundational C# – Microsoft](https://freecodecamp.org/certification/JiaYun/foundational-c-sharp-with-microsoft)
       - [Data Analysis with Python – FreeCodeCamp](https://freecodecamp.org/certification/JiaYun/data-analysis-with-python-v7)
       - [Introduction to Tableau – DataCamp](https://www.datacamp.com/completed/statement-of-accomplishment/course/e59bffb7ed6c7cdc930fa84500528a284f444b54)
-      - [UAiTED x NCU Human-Centered AI Lecture Series]([https://certificate-link.com](https://www.linkedin.com/in/jia-yun-chee/details/certifications/1751961606703/single-media-viewer/?profileId=ACoAADiI_yQBa0N-NHFtV9RHYTNrC1hmYWtjPig))
+      - [UAiTED x NCU Human-Centered AI Lecture Series](https://www.linkedin.com/in/jia-yun-chee/details/certifications/1751961606703/single-media-viewer/?profileId=ACoAADiI_yQBa0N-NHFtV9RHYTNrC1hmYWtjPig)
+
+  - area: Physics, Chemistry, Math, Economics
+    institution: National Junior College
+    date_start: 2019-01-01
+    date_end: 2020-12-30
+    summary: |
+      Obtained Distinction in H2 Math| Served as Class VIA Head
+  
+  - area: Triple Science
+    institution: Maris Stella High School
+    date_start: 2015-01-01
+    date_end: 2018-12-30
+    summary: |
+      Obtained L1R5 net 6| NPCC EXCO
+
 
 work:
   - position: Digital Business Analyst Intern
