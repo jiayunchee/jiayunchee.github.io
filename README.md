@@ -2,10 +2,6 @@
 # Display name
 title: Chee Jia Yun
 
-# Full name (for SEO)
-first_name: Jia Yun
-last_name: Chee
-
 # Status emoji
 status:
   icon: 📊
