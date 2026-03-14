@@ -8,7 +8,6 @@ name_pronunciation: Chee Jia Yun
 # Full name (for SEO)
 first_name: Jia Yun
 last_name: Chee
-
 avatar_filename: pp.jpg
 
 # Status emoji
