@@ -8,8 +8,6 @@ last_name: Chee
 avatar_filename: avatar.jpg
 
 # Status emoji
-status:
-  icon: 📊
 
 # Is this the primary user of the site?
 superuser: true
@@ -40,7 +38,8 @@ education:
 
       Exchange Programme at University of California, San Diego (AY25/26 Sem 1).
       NUS Winter Programme – Startup Ecosystem Exposure, Jakarta (AY24/25).
-
+      Eusoff Hall (AY23/24)
+    
       Certifications include:
       - AI Singapore Python
       - Introduction to SQL (Davidson College)
