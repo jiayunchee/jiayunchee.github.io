@@ -1,6 +1,6 @@
 ---
 widget: markdown
-headless: false
+headless: true
 title: Beyond Data
 weight: 70
 design:
