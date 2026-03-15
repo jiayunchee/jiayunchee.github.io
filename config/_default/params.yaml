@@ -37,7 +37,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: ''
+    notice: "© 2026 Chee Jia Yun. All rights reserved."
     license:
       enable: false
       allow_derivatives: false
