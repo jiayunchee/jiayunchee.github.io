@@ -187,3 +187,4 @@ awards:
 ---
 
 I am a Data Science & Analytics undergraduate at the National University of Singapore, specialising in Operations Research. I am passionate about turning data into actionable insights and have hands-on experience across government tech, pharma, and startup environments. Currently interning at GovTech as a Digital Business Analyst, I bridge business needs and AI capabilities to drive smarter decision-making.
+P.S the page looks better in dark mode, press the 'dark' button at the top right hand of the page. :)
