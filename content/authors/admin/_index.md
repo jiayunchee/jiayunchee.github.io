@@ -167,7 +167,6 @@ languages:
 # community block
 blocks:
   - block: life
-    source: community
     content:
       title: Life
       text: Things I enjoy outside of academics and work
