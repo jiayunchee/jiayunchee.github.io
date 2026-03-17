@@ -1,4 +1,4 @@
-- block: features
+- block: life
   content:
     title: Life
     text: Things I enjoy outside of academics and work
