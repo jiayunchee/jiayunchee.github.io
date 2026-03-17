@@ -165,25 +165,31 @@ languages:
     percent: 75
 
 # Awards.
-awards:
-  - title: National Award – Covid-19 Resilience Certificate and Medal
-    date: '2022-01-01'
-    awarder: Singapore Government
+life:
+  - title: Running
+    date: '2026-01-01'
+    awarder:
     icon: ''
+    image:
+      filename: running.jpg
     summary: |
-      Awarded the Covid-19 Resilience Certificate and Medal in recognition of contributions during the pandemic.
-  - title: Best in Theory – Emergency Medical Technician Course
-    date: '2021-01-01'
-    awarder: EMT Course Organisers
+      I strongly believe in continuous growth and dislike staying stagnant. I constantly look for ways to challenge myself and improve, whether intellectually, physically, or creatively. I started running recently and I firmly believe that no one likes running... the only thing that keeps me going honestly is seeing the progress I make over time and doing it to keep myself healthy. I enjoy my weekly runs with my friends and it really is a healthy change of pace in life. My pb for 5km is 25.56. :) 
+  - title: Mountaineering
+    date: '2025-09-01'
+    awarder:
     icon: ''
+    image:
+      filename: mountain.jpg
     summary: |
-      Awarded "Best in Theory" for outstanding performance in the Emergency Medical Technician course.
-  - title: Distinction – UNSW International Competitions and Assessments for Mathematics
-    date: '2017-01-01'
-    awarder: UNSW Global
+      One of my most memorable experiences was visiting the **Grand Canyon during my overseas exchange**, where the vast landscape reminded me how important it is to stay curious about the world. I love mountaineering so much as it really is a different sight from what I usually see as a city boy. Moving on Mount Kilimanjaro... ur next muahaha.
+  - title: Photography
+    date: '20126-01-01'
+    awarder:
     icon: ''
+    image:
+      filename: chinatown.jpg
     summary: |
-      Achieved Distinction in the UNSW International Competitions and Assessments for Mathematics.
+      I love taking photos. Fun fact, he banner above is actually taken from stature of liberty island of New York city. I love reminiscing moments when I look back at the photos and I honestly just snap whatever that looks good. Heres a pic of Chinatown. Oya I spent about $200 recently on a digicam... broke.
 ---
 
 I am a Data Science & Analytics undergraduate at the National University of Singapore, specialising in Operations Research. I am passionate about turning data into actionable insights and have hands-on experience across government tech, pharma, and startup environments. Currently interning at GovTech as a Digital Business Analyst, I bridge business needs and AI capabilities to drive smarter decision-making.
