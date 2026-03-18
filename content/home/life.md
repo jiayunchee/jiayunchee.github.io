@@ -1,5 +1,6 @@
 ---
 title: Life
+type: landing   # 🔥 THIS LINE IS CRITICAL
 
 sections:
   - block: life
