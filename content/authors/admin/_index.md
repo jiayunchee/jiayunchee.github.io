@@ -165,7 +165,7 @@ languages:
     percent: 75
 
 # community block
-Awards:
+life:
   - name: Life
     text: Things I enjoy outside of academics and work
     items:
