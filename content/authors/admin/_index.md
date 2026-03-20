@@ -165,7 +165,7 @@ languages:
     percent: 75
 
 # community block
-life:
+awards:
   - title: Neural Networks and Deep Learning
     url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2023-11-25'
