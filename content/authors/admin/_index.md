@@ -182,18 +182,17 @@ Awards:
         description: |
           One of my most memorable experiences was visiting the Grand Canyon during my overseas exchange, where the vast landscape reminded me how important it is to stay curious about the world.
 
-          I love mountaineering as it’s a completely different perspective from city life. Moving on… Mount Kilimanjaro, you’re next.
+          I love mountaineering as it's a completely different perspective from city life. Moving on… Mount Kilimanjaro, you're next.
         image: mountain.jpg
 
       - title: Photography
         description: |
           I love taking photos. Fun fact: the banner above was actually taken at the Statue of Liberty in New York City.
 
-          I enjoy capturing moments and reminiscing through them later. I honestly just snap whatever looks good. Here’s a shot of Chinatown.
+          I enjoy capturing moments and reminiscing through them later. I honestly just snap whatever looks good. Here's a shot of Chinatown.
 
           Also… I recently spent $200 on a digicam. Broke, but worth it.
         image: chinatown.jpg
-
 ---
 
 I am a Data Science & Analytics undergraduate at the National University of Singapore, specialising in Operations Research. I am passionate about turning data into actionable insights and have hands-on experience across government tech, pharma, and startup environments. Currently interning at GovTech as a Digital Business Analyst, I bridge business needs and AI capabilities to drive smarter decision-making.
