@@ -1,9 +1,11 @@
 import { About } from "@/components/About";
+import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
 import { Interests } from "@/components/Interests";
 import { NationalService } from "@/components/NationalService";
 import { Projects } from "@/components/Projects";
+import { Skills } from "@/components/Skills";
 import { Travels } from "@/components/Travels";
 import { Volunteering } from "@/components/Volunteering";
 import { Container } from "@/components/ui/Container";
@@ -21,6 +23,8 @@ export default function Home() {
       <NationalService />
       <Projects />
       <Volunteering />
+      <Skills />
+      <Education />
 
       {/* Placeholder until step 9, keeping the id so the navbar link works */}
       <Section id="contact" className="border-t border-line">

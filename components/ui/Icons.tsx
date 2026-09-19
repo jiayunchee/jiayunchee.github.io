@@ -91,3 +91,38 @@ export function HomeHeartIcon(props: IconProps) {
     </Icon>
   );
 }
+
+export function GlobeIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.4 3.5 8.5s-1.1 6.1-3.5 8.5c-2.4-2.4-3.5-5.4-3.5-8.5s1.1-6.1 3.5-8.5Z" />
+    </Icon>
+  );
+}
+
+export function PinIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </Icon>
+  );
+}
+
+export function HouseIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M4 10.5 12 4l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5H15v-5H9v5H5.5A1.5 1.5 0 0 1 4 19v-8.5Z" />
+    </Icon>
+  );
+}
+
+export function CapIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="m2.5 9.5 9.5-5 9.5 5-9.5 5-9.5-5Z" />
+      <path d="M6.5 11.8V16c0 1.2 2.5 2.5 5.5 2.5s5.5-1.3 5.5-2.5v-4.2M21.5 9.5V14" />
+    </Icon>
+  );
+}
