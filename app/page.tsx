@@ -1,6 +1,8 @@
 import { About } from "@/components/About";
+import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
 import { Interests } from "@/components/Interests";
+import { NationalService } from "@/components/NationalService";
 import { Travels } from "@/components/Travels";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -9,7 +11,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 // Sections still to come. Each placeholder gets replaced in a later step,
 // keeping the same `id` so the navbar links keep working.
 const upcoming = [
-  { id: "experience", index: "04", eyebrow: "Experience", title: "What I’ve been up to", step: 6 },
   { id: "projects", index: "05", eyebrow: "Projects", title: "Things I’ve built", step: 7 },
   { id: "contact", index: "06", eyebrow: "Contact", title: "Let’s talk.", step: 9 },
 ];
@@ -21,6 +22,8 @@ export default function Home() {
       <About />
       <Interests />
       <Travels />
+      <Experience />
+      <NationalService />
 
       {upcoming.map((section) => (
         <Section key={section.id} id={section.id} className="border-t border-line">

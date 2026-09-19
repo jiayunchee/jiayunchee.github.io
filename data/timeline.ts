@@ -17,7 +17,7 @@ export const timeline: TimelineEntry[] = [
     title: "Started NUS",
     description:
       "Began my Data Science & Analytics degree after a summer interning in finance & investment, and co-founded Project Kaya that November.",
-    highlights: ["NUS", "Advisor Alliance Group", "Project Kaya"],
+    highlights: ["NUS", "Advisors Alliance Group", "Project Kaya"],
   },
   {
     year: "2024",
