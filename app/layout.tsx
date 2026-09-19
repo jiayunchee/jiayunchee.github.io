@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Caveat, DM_Mono, Instrument_Sans, Instrument_Serif } from "next/font/google";
+import { Footer } from "@/components/Footer";
 import { MotionProvider } from "@/components/MotionProvider";
 import { Navbar } from "@/components/Navbar";
 import { site } from "@/data/site";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main id="main" tabIndex={-1} className="outline-none">
             {children}
           </main>
+          <Footer />
         </MotionProvider>
       </body>
     </html>

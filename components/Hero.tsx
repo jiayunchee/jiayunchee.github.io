@@ -105,7 +105,7 @@ function PenUnderline() {
       viewBox="0 0 200 14"
       preserveAspectRatio="none"
       fill="none"
-      className="absolute -bottom-[0.06em] left-0 h-[0.2em] w-full overflow-visible text-accent"
+      className="absolute -bottom-[0.2em] left-0 h-[0.2em] w-full overflow-visible text-accent"
     >
       <path
         d="M3 9.5C38 4 76 12.5 112 7.5S176 3.5 197 8"
