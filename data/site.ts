@@ -9,7 +9,19 @@ export const site = {
   tagline: "Building things. Going places. Staying curious.",
   email: "cheejiayun2405@gmail.com",
   linkedin: "https://www.linkedin.com/in/jia-yun-chee/",
+  /**
+   * Your photo for the About section: put the file in /public/images
+   * and set e.g. "/images/me.jpg". Leave null to show a placeholder.
+   */
+  portrait: null as string | null,
 } as const;
+
+/** The little "right now" status lines in the hero */
+export const now = [
+  { label: "Currently", value: "Singapore" },
+  { label: "Studying", value: "Data Science & Analytics @ NUS" },
+  { label: "Working", value: "TikTok" },
+];
 
 export type NavLink = {
   label: string;

@@ -12,7 +12,7 @@ const twMerge = extendTailwindMerge({
       radius: ["card"],
       shadow: ["card", "lift"],
       ease: ["out-expo"],
-      animate: ["pulse-soft"],
+      animate: ["pulse-soft", "ping-soft", "rise", "draw"],
     },
   },
 });
