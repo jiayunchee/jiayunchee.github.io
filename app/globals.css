@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design tokens
+   Every colour, size and timing on the site comes from here.
+   Tailwind turns each token into a class: --color-ink → text-ink,
+   --text-title → text-title, --spacing-section → py-section, etc.
+------------------------------------------------------------------- */
+
+@theme {
+  /* Paper & ink: the warm neutral base */
+  --color-paper: #f7f6f2;
+  --color-paper-2: #efede7;
+  --color-card: #fcfbf8;
+  --color-ink: #161513;
+  --color-ink-2: #4a4741;
+  --color-muted: #6f6b64;
+  --color-line: #e5e2da;
+  --color-line-strong: #cdc9bf;
+
+  /* Signature accent: pool-table felt green */
+  --color-accent: #2d6a4f;
+  --color-accent-soft: #dde9e1;
+
+  /* Supporting accents, quietly borrowed from pool balls.
+     Use sparingly: small dots, pins, stickers. */
+  --color-ball-1: #e3ad2d; /* yellow */
+  --color-ball-2: #2f5ba3; /* blue */
+  --color-ball-3: #cf4a3a; /* red */
+  --color-ball-4: #6a4f96; /* purple */
+  --color-ball-5: #de7a3a; /* orange */
+  --color-ball-6: #2d6a4f; /* green */
+  --color-ball-7: #8a3040; /* maroon */
+
+  /* Type scale: fluid and editorial, never shouty */
+  --text-display: clamp(2.75rem, 1.9rem + 3.6vw, 4.75rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.02em;
+  --text-title: clamp(2.125rem, 1.7rem + 1.8vw, 3.25rem);
+  --text-title--line-height: 1.06;
+  --text-title--letter-spacing: -0.015em;
+  --text-heading: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+  --text-heading--line-height: 1.15;
+  --text-heading--letter-spacing: -0.01em;
+  --text-lead: 1.1875rem;
+  --text-lead--line-height: 1.6;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.08em;
+
+  /* Layout */
+  --container-page: 72rem;
+  --container-narrow: 42rem;
+  --spacing-gutter: clamp(1.25rem, 4vw, 3rem);
+  --spacing-section: clamp(4rem, 2.5rem + 5vw, 7rem);
+  --spacing-nav: 5rem;
+
+  /* Shape & depth */
+  --radius-card: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(22 21 19 / 0.04);
+  --shadow-lift:
+    0 18px 40px -18px rgb(22 21 19 / 0.22), 0 2px 6px -2px rgb(22 21 19 / 0.06);
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.45;
+      transform: scale(0.8);
+    }
+  }
+}
+
+/* Fonts are loaded in app/layout.tsx and exposed as CSS variables */
+@theme inline {
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-hand: var(--font-caveat), "Bradley Hand", cursive;
+}
+
+/* ------------------------------------------------------------------
+   Global styles
+------------------------------------------------------------------- */
+
+@layer base {
+  html {
+    scroll-padding-top: 2rem;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Small reusable utilities
+------------------------------------------------------------------- */
+
+/* Small mono label, e.g. "01 — About" */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  line-height: var(--text-label--line-height);
+  letter-spacing: var(--text-label--letter-spacing);
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+/* Faint notebook dot grid */
+@utility bg-dots {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--color-ink) 16%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+/* Faint underline at rest; a darker one draws itself on hover */
+@utility link-underline {
+  background-image:
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(var(--color-line-strong), var(--color-line-strong));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size:
+    0% 1px,
+    100% 1px;
+  transition: background-size 0.5s var(--ease-out-expo);
+
+  &:hover,
+  &:focus-visible {
+    background-size:
+      100% 1px,
+      100% 1px;
+  }
+}
