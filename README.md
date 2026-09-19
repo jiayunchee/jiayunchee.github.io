@@ -4,22 +4,26 @@ My corner of the internet: a minimal, scrapbook-style personal site built with
 [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com) and
 [Motion](https://motion.dev).
 
-## Run it on your computer
+## Run it on your computer (Mac or Windows)
 
 1. Install [Node.js](https://nodejs.org) (the "LTS" version).
-2. Open Terminal in this folder and run:
+2. Open a terminal in this folder:
+   - **Windows:** right-click the folder in File Explorer → **Open in Terminal**.
+   - **Mac:** open Terminal, type `cd ` (with a space), drag this folder into the
+     window, and press Enter.
+3. Run this once, to download everything the site needs:
 
    ```bash
    npm install
    ```
 
-   (only needed the first time), then:
+4. Then start the site:
 
    ```bash
    npm run dev
    ```
 
-3. Open <http://localhost:3000>. The page updates every time you save a file.
+5. Open <http://localhost:3000>. The page updates every time you save a file.
 
 ## Change your content
 
@@ -47,8 +51,8 @@ Your site will live at `https://<your-username>.github.io`.
 
 1. **Make a GitHub account** at <https://github.com/signup> and note your username.
 2. **Install GitHub Desktop** from <https://desktop.github.com> and sign in with that account.
-3. In GitHub Desktop, choose **File → Add Local Repository…**, pick this folder
-   (`~/Projects/jia-yun-website`) and click **Add Repository**.
+3. In GitHub Desktop, choose **File → Add Local Repository…**, pick this project
+   folder (wherever you saved it) and click **Add Repository**.
 4. Click **Publish repository**. Name it **exactly** `<your-username>.github.io`
    (for example `jiayunchee.github.io`), **untick** "Keep this code private", and
    click **Publish Repository**.
@@ -57,6 +61,8 @@ Your site will live at `https://<your-username>.github.io`.
    **GitHub Actions**.
 6. Open the **Actions** tab, click **Deploy to GitHub Pages**, then
    **Run workflow → Run workflow**. After about 2 minutes you'll see a green tick.
+   (A red cross on the very first automatic run is normal: Pages wasn't switched
+   on yet.)
 7. Visit `https://<your-username>.github.io`. That's your live site.
 
 ### Updating the live site
