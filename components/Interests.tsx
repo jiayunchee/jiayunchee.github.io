@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
+import { BenchPress } from "@/components/BenchPress";
 import { PoolTable } from "@/components/PoolTable";
 import { Arrow } from "@/components/ui/Arrow";
 import { Container } from "@/components/ui/Container";
@@ -7,6 +8,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Tag } from "@/components/ui/Tag";
+import { fitness } from "@/data/fitness";
 import { countries, places, visitedCountries } from "@/data/travel";
 import { cn } from "@/lib/utils";
 
@@ -26,17 +28,18 @@ export function Interests() {
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-12">
+        {/* "dense" lets smaller cards fill any gaps on tablet-sized screens */}
+        <div className="mt-12 grid grid-flow-row-dense gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-12">
           <Reveal className="md:col-span-2 lg:col-span-7">
             <PoolCard />
           </Reveal>
           <Reveal delay={0.08} className="lg:col-span-5">
-            <FitnessCard />
-          </Reveal>
-          <Reveal delay={0.08} className="lg:col-span-5">
             <FriendsCard />
           </Reveal>
-          <Reveal delay={0.16} className="md:col-span-2 lg:col-span-7">
+          <Reveal delay={0.08} className="md:col-span-2 lg:col-span-12">
+            <FitnessCard />
+          </Reveal>
+          <Reveal delay={0.12} className="lg:col-span-12">
             <TravelCard />
           </Reveal>
         </div>
@@ -94,22 +97,42 @@ const week = ["done", "done", "done", "maybe", "rest", "rest", "rest"] as const;
 
 function FitnessCard() {
   return (
-    <article className={cardClasses}>
-      <CardIntro emoji="🏋️" title="Health & fitness">
-        <p>
-          I love working out, 3–4 times a week. But I’m a strong advocate of not wasting
-          money, so I train at ActiveSG, which is coincidentally only a 5-minute walk away.
-        </p>
-        <p>Plus swimming, staying active, and generally trying to keep the body functioning.</p>
-      </CardIntro>
+    <article
+      className={cn(cardClasses, "lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-10")}
+    >
+      <div className="flex flex-col">
+        <CardIntro emoji="🏋️" title="Health & fitness">
+          <p>
+            I love working out, 3–4 times a week. But I’m a strong advocate of not wasting
+            money, so I train at ActiveSG, which is coincidentally only a 5-minute walk away.
+          </p>
+          <p>Plus swimming, staying active, and generally trying to keep the body functioning.</p>
+        </CardIntro>
 
-      <div className="mt-auto pt-8">
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <dl className="mt-7 grid grid-cols-2 gap-4 border-y border-line py-5">
+          <div>
+            <dt className="eyebrow">Bench PB</dt>
+            <dd className="mt-1.5 text-3xl font-semibold tracking-tight text-ink">
+              {fitness.benchPB} kg
+            </dd>
+            <dd className="mt-1.5 font-hand text-lg leading-tight text-accent">
+              in the 100 kg club
+            </dd>
+          </div>
+          <div>
+            <dt className="eyebrow">5K PB</dt>
+            <dd className="mt-1.5 text-3xl font-semibold tracking-tight text-ink">
+              {fitness.fiveKPB}
+            </dd>
+          </div>
+        </dl>
+
+        <div className="mt-6 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="eyebrow">Workouts a week</p>
             <div
               role="img"
-              aria-label="3 to 4 workouts a week"
+              aria-label={`${fitness.workoutsPerWeek} workouts a week`}
               className="mt-3 flex items-center gap-1.5"
             >
               {week.map((day, i) => (
@@ -124,7 +147,7 @@ function FitnessCard() {
                   )}
                 />
               ))}
-              <span className="ml-2 font-mono text-sm text-ink">3–4×</span>
+              <span className="ml-2 font-mono text-sm text-ink">{fitness.workoutsPerWeek}×</span>
             </div>
           </div>
           <p className="-rotate-3 font-hand text-xl leading-tight text-accent">
@@ -133,7 +156,7 @@ function FitnessCard() {
           </p>
         </div>
 
-        <ul className="mt-6 flex flex-wrap gap-2">
+        <ul className="mt-6 flex flex-wrap gap-2 lg:mt-auto lg:pt-6">
           <li>
             <Tag dot="bg-accent">ActiveSG · 5 min walk</Tag>
           </li>
@@ -144,6 +167,8 @@ function FitnessCard() {
           ))}
         </ul>
       </div>
+
+      <BenchPress className="mt-8 lg:mt-0" />
     </article>
   );
 }
@@ -223,16 +248,22 @@ function TravelCard() {
       className={cn(
         cardClasses,
         "transition duration-500 ease-out-expo hover:-translate-y-1 hover:border-line-strong hover:shadow-lift",
+        "lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:grid-rows-[auto_1fr] lg:gap-x-10",
       )}
     >
-      <CardIntro emoji="✈️" title="Travelling">
-        <p>
-          I like seeing new places, eating whatever looks interesting, and collecting stories
-          along the way.
-        </p>
-      </CardIntro>
+      <div className="lg:col-start-1 lg:row-start-1">
+        <CardIntro emoji="✈️" title="Travelling">
+          <p>
+            I like seeing new places, eating whatever looks interesting, and collecting
+            stories along the way.
+          </p>
+        </CardIntro>
+      </div>
 
-      <ul aria-label="Countries so far" className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-4">
+      <ul
+        aria-label="Countries so far"
+        className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:self-center"
+      >
         {stamps.map((stamp) => (
           <li
             key={stamp.label}
@@ -250,7 +281,7 @@ function TravelCard() {
         ))}
       </ul>
 
-      <div className="mt-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-2 pt-8">
+      <div className="mt-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-2 pt-8 lg:col-start-1 lg:row-start-2 lg:self-end">
         <p className="font-mono text-[0.8125rem] text-muted">
           {places.length}+ places · {visitedCountries.length} countries
         </p>

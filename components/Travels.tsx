@@ -29,10 +29,10 @@ export function Travels() {
                 <dd className="mt-2">
                   <a
                     href={`mailto:${site.email}?subject=${encodeURIComponent("An idea for your next destination")}`}
-                    className="group inline-flex items-baseline gap-3 font-serif text-[2.5rem] leading-none text-ink"
+                    className="group inline-flex items-baseline gap-3 text-4xl font-semibold tracking-tight text-ink"
                   >
                     → ?
-                    <span className="font-hand text-lg text-accent opacity-0 transition duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 pointer-coarse:opacity-100">
+                    <span className="font-hand text-lg font-normal tracking-normal text-accent opacity-0 transition duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 pointer-coarse:opacity-100">
                       suggestions welcome
                     </span>
                   </a>
@@ -54,7 +54,7 @@ function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div>
       <dt className="eyebrow">{label}</dt>
-      <dd className="mt-2 font-serif text-[2.5rem] leading-none text-ink">{value}</dd>
+      <dd className="mt-2 text-4xl font-semibold tracking-tight text-ink">{value}</dd>
     </div>
   );
 }

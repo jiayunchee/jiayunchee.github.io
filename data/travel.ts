@@ -25,6 +25,7 @@ export const countries = {
   Thailand: { short: "Thailand", flag: "🇹🇭", mapId: "764" },
   Malaysia: { short: "Malaysia", flag: "🇲🇾", mapId: "458" },
   Indonesia: { short: "Indonesia", flag: "🇮🇩", mapId: "360" },
+  Philippines: { short: "Philippines", flag: "🇵🇭", mapId: "608" },
   "United Kingdom": { short: "UK", flag: "🇬🇧", mapId: "826" },
   Australia: { short: "Australia", flag: "🇦🇺", mapId: "036" },
 } satisfies Record<string, Country>;
@@ -94,6 +95,7 @@ export const places: Place[] = [
     tag: "NUS STEER programme",
   },
   { city: "Bali", country: "Indonesia", coordinates: { lat: -8.4095, lng: 115.1889 } },
+  { city: "Cebu", country: "Philippines", coordinates: { lat: 10.3157, lng: 123.8854 } },
 
   // Further afield
   { city: "London", country: "United Kingdom", coordinates: { lat: 51.5072, lng: -0.1276 } },
