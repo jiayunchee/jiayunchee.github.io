@@ -27,9 +27,9 @@ export function About() {
                 working out how to make things run a little better.
               </p>
               <p>
-                I’m happiest when I’m building something. In my first year I co-founded
-                Project Kaya, a social discovery app for university students, because I
-                thought meeting people on campus could be much easier. Since then I’ve
+                I’m happiest when I’m building something. In my first year I started
+                Project Kaya, a dating app for university students, with my brother and his
+                friend. Since then I’ve
                 picked up internships across tech, government, banking and healthcare, and
                 learnt a lot about turning numbers into decisions.
               </p>
