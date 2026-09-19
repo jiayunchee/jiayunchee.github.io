@@ -28,17 +28,17 @@ export const timeline: TimelineEntry[] = [
   },
   {
     year: "2025",
-    title: "More internships + projects",
+    title: "Internships, projects + UC San Diego",
     description:
-      "Business insights at MSD, volunteering as a data analyst with the Singapore Red Cross, and plenty of side projects in between.",
-    highlights: ["MSD", "Singapore Red Cross"],
+      "Business insights at MSD over the summer, volunteering as a data analyst with the Singapore Red Cross, a few side projects, then an exchange semester at UC San Diego from September.",
+    highlights: ["MSD", "Singapore Red Cross", "UC San Diego"],
   },
   {
     year: "2026",
-    title: "Exchange at UC San Diego + internships",
+    title: "Internships, back to back",
     description:
-      "An exchange at UC San Diego, then internships at GovTech, Bank of Singapore and now TikTok.",
-    highlights: ["UC San Diego", "GovTech", "Bank of Singapore", "TikTok"],
+      "Back in Singapore for internships at GovTech, then Bank of Singapore, and now TikTok.",
+    highlights: ["GovTech", "Bank of Singapore", "TikTok"],
     now: true,
   },
   {

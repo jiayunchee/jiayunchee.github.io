@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-const rotation = { right: 0, down: 90, "up-right": -45 } as const;
+const rotation = { right: 0, down: 90, left: 180, "up-right": -45 } as const;
 
 export type ArrowDirection = keyof typeof rotation;
 

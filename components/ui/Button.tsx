@@ -16,6 +16,7 @@ const variantClasses: Record<Variant, string> = {
 const arrowHover: Record<ArrowDirection, string> = {
   right: "group-hover:translate-x-0.5",
   down: "group-hover:translate-y-0.5",
+  left: "group-hover:-translate-x-0.5",
   "up-right": "group-hover:translate-x-0.5 group-hover:-translate-y-0.5",
 };
 

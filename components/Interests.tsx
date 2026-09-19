@@ -7,6 +7,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Tag } from "@/components/ui/Tag";
+import { countries, places, visitedCountries } from "@/data/travel";
 import { cn } from "@/lib/utils";
 
 const cardClasses =
@@ -202,19 +203,18 @@ function FriendsCard() {
 
 /* ---------------------------------------------------------------- Travel */
 
-// Passport-style stamps. The map in the Travels section has the full list of places.
-const stamps = [
-  { label: "Japan", colour: "text-ball-3", round: true, tilt: -8 },
-  { label: "USA", colour: "text-ball-2", round: false, tilt: 5 },
-  { label: "South Korea", colour: "text-ball-4", round: false, tilt: -4 },
-  { label: "Taiwan", colour: "text-ball-6", round: true, tilt: 7 },
-  { label: "Hong Kong", colour: "text-ball-7", round: false, tilt: -6 },
-  { label: "UK", colour: "text-ball-2", round: true, tilt: 4 },
-  { label: "Australia", colour: "text-ball-6", round: false, tilt: -3 },
-  { label: "Indonesia", colour: "text-ball-3", round: false, tilt: 6 },
-  { label: "Malaysia", colour: "text-ball-4", round: true, tilt: -7 },
-  { label: "Thailand", colour: "text-ball-7", round: false, tilt: 3 },
-];
+// One passport-style stamp per country in data/travel.ts
+const inks = ["text-ball-2", "text-ball-3", "text-ball-4", "text-ball-6", "text-ball-7"];
+const tilts = [5, -8, -4, 7, -6, 3, -7, 6, 4, -3];
+const stamps = visitedCountries.map((name, i) => {
+  const label = countries[name].short;
+  return {
+    label,
+    colour: inks[i % inks.length],
+    round: i % 2 === 1 && label.length <= 8,
+    tilt: tilts[i % tilts.length],
+  };
+});
 
 function TravelCard() {
   return (
@@ -251,7 +251,9 @@ function TravelCard() {
       </ul>
 
       <div className="mt-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-2 pt-8">
-        <p className="font-mono text-[0.8125rem] text-muted">24+ places · 10 countries</p>
+        <p className="font-mono text-[0.8125rem] text-muted">
+          {places.length}+ places · {visitedCountries.length} countries
+        </p>
         <span className="inline-flex items-center gap-1.5 text-sm font-medium whitespace-nowrap text-ink">
           Open the map
           <Arrow className="transition duration-500 ease-out-expo group-hover:translate-x-0.5" />
