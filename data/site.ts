@@ -13,7 +13,7 @@ export const site = {
    * Your photo for the About section: put the file in /public/images
    * and set e.g. "/images/me.jpg". Leave null to show a placeholder.
    */
-  portrait: null as string | null,
+  portrait: "/images/me.jpg" as string | null,
 } as const;
 
 /** The little "right now" status lines in the hero */
