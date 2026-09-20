@@ -50,7 +50,7 @@ export function About() {
             <Polaroid
               src={site.portrait}
               alt="A photo of Jia Yun"
-              caption="me, probably thinking about pool"
+              caption="Exchange in NYC!!!"
               placeholder="photo of me, coming soon"
               tilt={3}
             />
